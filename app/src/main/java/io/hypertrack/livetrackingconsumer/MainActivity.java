@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
 
             //Get Action ID from your server to track the order.
-            // Currently, here we are enter the action ID of delivery action that is need to be tracked.
+            // Currently, here we are enter the action ID of delivery action that is need to be
+            // tracked.
             if (actionID.getText().toString().isEmpty()) {
                 Toast.makeText(MainActivity.this, "Enter action id", Toast.LENGTH_LONG).show();
                 return;
@@ -61,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
             actions.add(actionID.getText().toString());
 
             // Call trackAction API method with action ID for tracking.
-            // Start YourMapActivity containing HyperTrackMapFragment view with the customization on success
-            // response of trackAction method
+            // Start YourMapActivity containing HyperTrackMapFragment view with the
+            // customization on succes response of trackAction method
             HyperTrack.trackAction(actions, new HyperTrackCallback() {
                 @Override
                 public void onSuccess(@NonNull SuccessResponse response) {
@@ -81,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
                     if (progressDialog != null) {
                         progressDialog.cancel();
                     }
-                    Toast.makeText(MainActivity.this, "Error Occurred while trackActions: " + errorResponse.getErrorMessage(),
+                    Toast.makeText(MainActivity.this, "Error Occurred while trackActions: " +
+                                    errorResponse.getErrorMessage(),
                             Toast.LENGTH_LONG).show();
                 }
             });

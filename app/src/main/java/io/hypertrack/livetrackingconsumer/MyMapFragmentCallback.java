@@ -25,7 +25,8 @@ public class MyMapFragmentCallback extends MapFragmentCallback {
      * @param changedStatusActions The List of Actions for which the status changed.
      */
     @Override
-    public void onActionStatusChanged(List<String> changedStatusActionIds, List<Action> changedStatusActions) {
+    public void onActionStatusChanged(List<String> changedStatusActionIds,
+                                      List<Action> changedStatusActions) {
         //Write your code here
         super.onActionStatusChanged(changedStatusActionIds, changedStatusActions);
     }
