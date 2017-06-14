@@ -82,9 +82,10 @@ public class MainActivity extends AppCompatActivity {
                     if (progressDialog != null) {
                         progressDialog.cancel();
                     }
-                    Toast.makeText(MainActivity.this, "Error Occurred while trackActions: " +
-                                    errorResponse.getErrorMessage(),
-                            Toast.LENGTH_LONG).show();
+
+                    Toast.makeText(MainActivity.this, "Error Occurred while trackActions: " + 
+                                   errorResponse.getErrorMessage(),Toast.LENGTH_LONG).show();
+
                 }
             });
         }
