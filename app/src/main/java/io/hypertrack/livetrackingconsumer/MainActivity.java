@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Initialize views
-    private void initUI(){
+    private void initUI() {
 
         actionID = (EditText) findViewById(R.id.action_id);
         trackAction = (Button) findViewById(R.id.track);
@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
                         progressDialog.cancel();
                     }
 
-                    Toast.makeText(MainActivity.this, "Error Occurred while trackActions: " + 
-                                   errorResponse.getErrorMessage(),Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Error Occurred while trackActions: " +
+                            errorResponse.getErrorMessage(), Toast.LENGTH_LONG).show();
 
                 }
             });
@@ -93,8 +93,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onStop() {
-        HyperTrack.removeActions(null);
         super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        HyperTrack.removeActions(null);
     }
 
     private void initializeProgressDialog() {
