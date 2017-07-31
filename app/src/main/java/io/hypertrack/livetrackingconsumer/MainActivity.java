@@ -90,18 +90,17 @@ public class MainActivity extends AppCompatActivity {
             });
         }
     };
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
         HyperTrack.removeActions(null);
     }
-
+    
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+    
     private void initializeProgressDialog() {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Fetching ");
