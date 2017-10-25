@@ -11,6 +11,7 @@ import com.hypertrack.lib.MapFragmentCallback;
  * Created by Aman Jain on 06/03/17.
  */
 
+//Refer here for more detail about live tracking view https://docs.hypertrack.com/usecases/livetracking/android/installing.html
 public class YourMapActivity extends AppCompatActivity {
 
     @Override
@@ -21,7 +22,7 @@ public class YourMapActivity extends AppCompatActivity {
         initUI();
     }
 
-    private void initUI(){
+    private void initUI() {
 
         /** Initialize Map Fragment added in Activity Layout to getMapAsync
          *  Once map is created onMapReady callback will be fire with GoogleMap object
@@ -39,7 +40,5 @@ public class YourMapActivity extends AppCompatActivity {
          * Call the method below to register for any callbacks/updates on Live Tracking View/Map
          */
         hyperTrackMapFragment.setMapFragmentCallback(new MapFragmentCallback());
-
     }
-
 }

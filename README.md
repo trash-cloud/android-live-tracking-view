@@ -11,7 +11,7 @@ Live Tracking View Consumer application built with the `HyperTrack SDK` for Andr
 ## Usage:
 ![Live Tracking View example](readme-imgs/live_tracking_view_consumer.gif)
 
-The live tracking view consumer application implements tracking a driver performing a delivery. Read our [introduction](https://docs.hypertrack.com/) to know more.
+The live tracking view consumer application implements tracking a driver performing a delivery. Read our [introduction](https://docs.hypertrack.com/usecases/livetracking/android/installing.html) to know more.
 
 Recommended: Take a look at the Android [documentation](https://docs.hypertrack.com/sdks/android/setup.html).
 

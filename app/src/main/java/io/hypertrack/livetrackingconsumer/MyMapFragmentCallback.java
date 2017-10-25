@@ -11,6 +11,7 @@ import java.util.List;
  * Created by Aman Jain on 30/05/17.
  */
 
+//Refer here for more callbacks method https://docs.hypertrack.com/sdks/android/reference/methods.html#callbacks
 public class MyMapFragmentCallback extends MapFragmentCallback {
 
     @Override

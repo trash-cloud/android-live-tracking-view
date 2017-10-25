@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
     private EditText actionID;
-    private Button trackAction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private void initUI() {
 
         actionID = (EditText) findViewById(R.id.action_id);
-        trackAction = (Button) findViewById(R.id.track);
+        Button trackAction = (Button) findViewById(R.id.track);
 
         //Click listener for trackAction Button
         trackAction.setOnClickListener(trackActionButtonListener);
@@ -64,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             // Call trackAction API method with action ID for tracking.
             // Start YourMapActivity containing HyperTrackMapFragment view with the
             // customization on succes response of trackAction method
+            // Refer here for more detail https://docs.hypertrack.com/usecases/livetracking/android/installing.html#step-4-track-actions
             HyperTrack.trackAction(actions, new HyperTrackCallback() {
                 @Override
                 public void onSuccess(@NonNull SuccessResponse response) {
@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //Refer here for more detail https://docs.hypertrack.com/usecases/livetracking/android/installing.html#step-7-remove-actions
         HyperTrack.removeActions(null);
     }
 
