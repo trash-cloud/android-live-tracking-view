@@ -1,7 +1,7 @@
 # HyperTrack Live Tracking View Consumer Android app
 [![Slack Status](http://slack.hypertrack.com/badge.svg)](http://slack.hypertrack.com)
 
-Live Tracking View Consumer application built with the `HyperTrack SDK` for Android.
+[Live Tracking View](https://docs.hypertrack.com/usecases/livetracking/android/installing.html) Consumer application built with the `HyperTrack SDK` for Android. For iOS go [here](https://docs.hypertrack.com/usecases/livetracking/android/installing.html).
 
 ## Requirements
 1. [Android Studio](https://developer.android.com/studio/index.html) with emulator (or test device)
