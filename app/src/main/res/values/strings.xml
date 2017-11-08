@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Live Tracking Consumer</string>
-    <string name="track">Track</string>
+    <string name="track">Track With View</string>
     <string name="enter_action_id">Enter Action ID</string>
     <string name="retry">Retry</string>
+    <string name="track_with_callbacks">Track with Callbacks</string>
 </resources>

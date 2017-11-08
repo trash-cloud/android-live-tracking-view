@@ -20,6 +20,10 @@ android {
 }
 repositories {
     maven { url 'http://hypertrack-android-sdk.s3-website-us-west-2.amazonaws.com/' }
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
 }
 
 dependencies {
@@ -31,8 +35,12 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 
-    compile('com.hypertrack:android:0.4.19:release@aar') {
+    compile('com.hypertrack:android:0.4.24:release@aar') {
         transitive = true;
+    }
+
+    compile('com.mapbox.mapboxsdk:mapbox-android-sdk:5.2.0-beta.3@aar') {
+        transitive=true
     }
 
 }

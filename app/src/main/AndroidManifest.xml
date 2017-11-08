@@ -20,10 +20,7 @@
         <activity android:name="io.hypertrack.livetrackingconsumer.YourMapActivity"
             android:theme="@style/TrackingActivityTheme"
             android:screenOrientation="portrait"/>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value=<GOOGLE_MAP_API_KEY> />
+        <activity android:name=".MapBoxActivity" android:screenOrientation="portrait"/>
 
     </application>
 

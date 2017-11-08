@@ -1,7 +1,6 @@
 package io.hypertrack.livetrackingconsumer;
 
 import android.app.Application;
-import android.util.Log;
 
 import com.hypertrack.lib.HyperTrack;
 
@@ -17,6 +16,6 @@ public class LiveTrackingConsumerApplication extends Application {
         // Refer to
         // documentation at https://docs.hypertrack.com/v3/gettingstarted/authentication.html#publishable-key
         // @NOTE: Add **YOUR_PUBLISHABLE_KEY** here for SDK to be authenticated with HyperTrack Server
-        HyperTrack.initialize(this,TEST_PUBLISHABLE_KEY);
+        HyperTrack.initialize(this,HYPERTRACK_KEY);
     }
 }
