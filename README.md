@@ -18,14 +18,14 @@ The live tracking view consumer application implements tracking a driver perform
 1. Clone this repo.
     ```bash
     # Clone this repository
-    $ git clone https://github.com/hypertrack/use-cases-example-android.git
+    $ git clone https://github.com/hypertrack/android-live-tracking-view.git
     ```
     **OR**
 
     In Android Studio
 
     **Goto File > New > Project from Version Control > Git**
-    Enter Enter Git Repository URL https://github.com/hypertrack/use-cases-example-android.git and Click on Clone.
+    Enter Enter Git Repository URL https://github.com/hypertrack/android-live-tracking-view.git and Click on Clone.
 2. Sync the Gradle files to download the HyperTrack SDKs.
 3. Replace `YOUR_PUBLISHABLE_KEY` with your Hypertrack API key in `LiveTrackingConsumerApplication.java` [here](https://github.com/hypertrack/live-tracking-consumer-example-android/blob/master/app/src/main/java/io/hypertrack/livetrackingconsumer/LiveTrackingConsumerApplication.java#L19).
 4. Setup a Google Maps API key. More info [here](https://developers.google.com/maps/documentation/android-api/start) and the steps to get an API key are [here](https://developers.google.com/maps/documentation/android-api/start#step_4_get_a_google_maps_api_key).
