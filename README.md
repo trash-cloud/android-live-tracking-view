@@ -5,7 +5,7 @@
 
 ## Requirements
 1. [Android Studio](https://developer.android.com/studio/index.html) with emulator (or test device)
-2. HyperTrack API keys. Learn more about them [here](https://docs.hypertrack.com/gettingstarted/authentication.html), and sign up for them [here](https://dashboard.hypertrack.com/signup).
+2. HyperTrack API keys. Learn more about them [here](https://docs.hypertrack.com/#authentication), and sign up for them [here](https://dashboard.hypertrack.com/signup).
 3. [Action](https://docs.hypertrack.com/sdks/android/reference/action.html) ID of the order.
 
 ## Usage:
