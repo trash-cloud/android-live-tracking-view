@@ -1,7 +1,5 @@
 package io.hypertrack.livetrackingconsumer;
 
-import com.google.android.gms.maps.GoogleMap;
-import com.hypertrack.lib.HyperTrackMapFragment;
 import com.hypertrack.lib.MapFragmentCallback;
 import com.hypertrack.lib.models.Action;
 
@@ -13,12 +11,6 @@ import java.util.List;
 
 //Refer here for more callbacks method https://docs.hypertrack.com/sdks/android/reference/methods.html#callbacks
 public class MyMapFragmentCallback extends MapFragmentCallback {
-
-    @Override
-    public void onMapReadyCallback(HyperTrackMapFragment hyperTrackMapFragment, GoogleMap map) {
-        //Write your code here
-        super.onMapReadyCallback(hyperTrackMapFragment, map);
-    }
 
     /**
      * Called when status of any action changes during live order tracking.

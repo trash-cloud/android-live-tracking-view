@@ -10,10 +10,10 @@
 
         <fragment
             android:id="@+id/htMapfragment"
-            android:name="com.hypertrack.lib.HyperTrackMapFragment"
+            android:name="com.hypertrack.lib.tracking.MapProvider.GoogleMapFragmentView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:layout="@layout/fragment_map" />
+            tools:layout="@layout/map_fragment" />
 
     </LinearLayout>
 

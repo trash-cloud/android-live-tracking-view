@@ -4,8 +4,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.hypertrack.lib.HyperTrackMapFragment;
 import com.hypertrack.lib.MapFragmentCallback;
+import com.hypertrack.lib.tracking.MapProvider.GoogleMapFragmentView;
+import com.hypertrack.lib.tracking.MapProvider.MapFragmentView;
 
 /**
  * Created by Aman Jain on 06/03/17.
@@ -27,18 +28,20 @@ public class YourMapActivity extends AppCompatActivity {
         /** Initialize Map Fragment added in Activity Layout to getMapAsync
          *  Once map is created onMapReady callback will be fire with GoogleMap object
          */
-        HyperTrackMapFragment hyperTrackMapFragment = (HyperTrackMapFragment)
+        GoogleMapFragmentView hyperTrackMapFragment = (GoogleMapFragmentView)
                 getSupportFragmentManager().findFragmentById(R.id.htMapfragment);
 
         /**
          * Call the method below to enable UI customizations for Live Tracking View,
          * an instance of HyperTrackMapAdapter needs to be set as depicted below
          */
-        hyperTrackMapFragment.setHTMapAdapter(new MyMapAdapter(this));
+        hyperTrackMapFragment.setMapAdapter(new MyMapAdapter(this));
 
          /*
          * Call the method below to register for any callbacks/updates on Live Tracking View/Map
          */
-        hyperTrackMapFragment.setMapFragmentCallback(new MapFragmentCallback());
+        hyperTrackMapFragment.setMapCallback(new MapFragmentCallback());
+
+        hyperTrackMapFragment.setUseCaseType(MapFragmentView.Type.ORDER_TRACKING);
     }
 }
