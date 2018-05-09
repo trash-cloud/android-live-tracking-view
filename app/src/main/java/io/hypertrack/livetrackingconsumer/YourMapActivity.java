@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.hypertrack.lib.MapFragmentCallback;
-import com.hypertrack.lib.tracking.MapProvider.GoogleMapFragmentView;
+import com.hypertrack.lib.tracking.MapProvider.HyperTrackMapFragment;
 import com.hypertrack.lib.tracking.MapProvider.MapFragmentView;
 
 /**
@@ -28,7 +28,7 @@ public class YourMapActivity extends AppCompatActivity {
         /** Initialize Map Fragment added in Activity Layout to getMapAsync
          *  Once map is created onMapReady callback will be fire with GoogleMap object
          */
-        GoogleMapFragmentView hyperTrackMapFragment = (GoogleMapFragmentView)
+        HyperTrackMapFragment hyperTrackMapFragment = (HyperTrackMapFragment)
                 getSupportFragmentManager().findFragmentById(R.id.htMapfragment);
 
         /**
