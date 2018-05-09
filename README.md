@@ -9,7 +9,11 @@
 3. [Action](https://docs.hypertrack.com/sdks/android/reference/action.html) ID of the order.
 
 ## Usage:
-![Live Tracking View example](readme-imgs/live_tracking_view_consumer.gif)
+<p align="center">
+<kbd>
+<img src="readme-imgs/live_tracking_view.png" alt="Live Tracking View" width="329" height="633">
+</kbd>
+</p>
 
 The live tracking view consumer application implements tracking a driver performing a delivery. Read our [introduction](https://docs.hypertrack.com/usecases/livetracking/android/installing.html) to know more.
 
