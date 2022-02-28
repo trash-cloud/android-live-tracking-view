@@ -13,10 +13,11 @@ public class LiveTrackingConsumerApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        String publishableKey = "JrKn1rygp4lqdquyP-fdQ8YNdl_fIaTGJOWAJE52arhWh-izOaejKuTaY2nJnXbgJR2z1JjSUvURkdSVfyXfhw";
         // Initialize HyperTrack SDK with the Publishable Key
         // Refer to
         // documentation at https://docs.hypertrack.com/gettingstarted/authentication.html#publishable-key
         // @NOTE: Add **YOUR_PUBLISHABLE_KEY** here for SDK to be authenticated with HyperTrack Server
-        HyperTrack.initialize(this,HYPERTRACK_PUBLISHABLE_KEY);
+        HyperTrack.initialize(this,publishableKey);
     }
 }
